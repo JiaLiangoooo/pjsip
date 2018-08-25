@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ipjsystest.xcodeproj">
+      location = "self:testSipPhone.xcodeproj">
    </FileRef>
 </Workspace>
