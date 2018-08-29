@@ -1,6 +1,6 @@
 PODS:
   - OpenSSL-Universal (1.0.2.13)
-  - pjsip (2.7.1):
+  - pjsip (2.7.2):
     - OpenSSL-Universal
 
 DEPENDENCIES:
@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   OpenSSL-Universal: 401888162f11c33ebbd46f782d9229da35c61327
-  pjsip: 226c38a094df89ca03391e9b134112a89c371636
+  pjsip: 47cd919d2bbe75563bff4057739b97c659ce92d5
 
 PODFILE CHECKSUM: 0a2bda59e8aec774efbf5541ab2510bb12ee4909
 

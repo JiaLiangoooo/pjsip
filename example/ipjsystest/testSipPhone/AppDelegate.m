@@ -21,6 +21,7 @@ static void on_reg_state(pjsua_acc_id acc_id);
 
 
 #define AUDIO_CODEC_G729    "18"
+#define DISABLE_AUDIO_CODEC    "GSM/8000"
 
 @interface AppDelegate ()
 
@@ -102,6 +103,22 @@ static void on_reg_state(pjsua_acc_id acc_id);
         NSLog(@"error start pjsua"); return NO;
     }
     
+    {
+        pj_str_t codec_id = pj_str( "speex/8000" );
+        
+        pj_status_t status = pjsua_codec_set_priority(&codec_id, PJMEDIA_CODEC_PRIO_DISABLED);
+        if (status != PJ_SUCCESS) {
+            NSLog(@"codeC设置失败");
+        }
+    }
+    
+    {
+        pj_str_t codec_id = pj_str( "G729/8000" );
+        pj_status_t status = pjsua_codec_set_priority(&codec_id, PJMEDIA_CODEC_PRIO_NORMAL);
+        if (status != PJ_SUCCESS) {
+            NSLog(@"codeC设置失败");
+        }
+    }
     {
         const unsigned kCodecInfoSize = 64;
         pjsua_codec_info codecInfo[kCodecInfoSize];
