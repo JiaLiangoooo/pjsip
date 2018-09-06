@@ -5,4 +5,5 @@ target 'testSipPhone' do
 # pod 'pjsip', :git => 'https://github.com/chebur/pjsip.git', :commit => '890929be9d82900cba8996427725794a244725b5'
 pod 'pjsip', :path => '/Users/Star/work/icsoc/cocoapods/pjsip/'
 
+#pod 'liblinphone'
 end

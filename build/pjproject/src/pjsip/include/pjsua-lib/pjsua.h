@@ -272,7 +272,7 @@ typedef int pjsua_buddy_id;
 typedef int pjsua_player_id;
 
 /** File recorder identification */
-typedef int pjsua_recorder_id;
+typedef int pjsua_recorderid;
 
 /** Conference port identification */
 typedef int pjsua_conf_port_id;

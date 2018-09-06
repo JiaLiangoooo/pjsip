@@ -21,9 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.serverField.text = @"192.168.96.6";
-    self.usernameField.text = @"5399";
-    self.passwordField.text = @"99667a8109f0ae61e260f543b3ff4d7d";
+    self.serverField.text = @"phone.test.icsoc.net:5090";
+    self.usernameField.text = @"ss782ss9999";
+    self.passwordField.text = @"OFsFQiGe";
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(__handleRegisterStatus:)
                                                  name:@"SIPRegisterStatusNotification"
